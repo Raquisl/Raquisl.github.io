@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Outfit&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        if (localStorage.getItem("name") !== 'null') {
+            window.location.href = `${window.location.origin}/src/Pages/Landing%20Page/index.html`;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="form">
+        <p>Whats your name?</p>
+        <input method="post" type="text" placeholder="name" id="nameField" />
+        <br>
+        <input id="submitButton" class="formButton" type="button" onclick="saveAndRedirect(document.getElementById('nameField').value)" />
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
