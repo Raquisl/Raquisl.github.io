@@ -9,8 +9,7 @@ body{
     font-size:1.65vw; 
 }
 #nameField {
-  width: '100%';
-  font-size: 82px;
+font-size: 1.7vw;
 }
 
 
@@ -21,14 +20,20 @@ body{
     top:0;
     width: 100%;
     padding: 1em;
-    height: 1em;
+    height: 5em;
     background-color:rgb(224, 187, 228, 0.5);
     z-index: 1000;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+
+.welcomeMessage{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .navInsideHeader{
@@ -37,6 +42,7 @@ body{
         gap: 2rem;
         justify-content: center;
         align-items: center;
+        transform: translateX(-20%);
       
 }
 
@@ -105,8 +111,21 @@ body{
   }
 
 .designSectionButton{
-    height:30em;
+    height:20em;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
   }
+
+  .designSectionButton:hover{
+    transform:scale(1.05);
+
+  }
+
+.designSectionButton:active{
+  transform:scale(1.05);
+  transform:translateY(5%);
+}
+  
 
  
  /*WebDev Section*/
@@ -121,9 +140,18 @@ body{
   }
 
 .WiTButton{
-    height:30em;
+    height:20em;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
   }
 
+  .WiTButton:hover{
+    transform:scale(1.05);
+  }
+  .WiTButton:active{
+  transform: scale(1.05);
+  transform: translateY(5%);
+}
 
  /*About Me Section*/
  
@@ -138,7 +166,17 @@ body{
   }
 
   .aboutMeButton{
-    height:30em;
+    height:20em;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.aboutMeButton:hover{
+  transform: scale(1.05);
+}
+.aboutMeButton:active{
+  transform: scale(1.05);
+  transform: translateY(5%);
 }
 
 /*Back to Top*/
