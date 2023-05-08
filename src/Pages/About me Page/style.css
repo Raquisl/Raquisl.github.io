@@ -1,0 +1,256 @@
+body{
+  background-image: url(./Assets/Desktop\ -\ 1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin:0;
+  font-family: 'outfit', sans-serif; 
+  font-size:1.65vw; 
+}
+
+
+/*Header and Nav*/
+
+.headerLandingPage{
+  position:fixed;
+  top:0;
+  width: 100%;
+  padding: 1em;
+  height: 1em;
+  background-color:rgb(224, 187, 228, 0.5);
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navInsideHeader{
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    
+}
+
+.aTagScrollToSection{
+  text-decoration: none;
+  cursor:pointer!important;
+  color: #000;
+}
+
+/*All Pager Grid and Flex*/
+
+.justifyAllPage{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+margin: 0.5em;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+float:inline-end;
+min-height: 100vh;
+
+}
+
+/*Hero Image and Title*/
+
+
+.openingSection{
+  position:relative;
+  width:80%;
+  padding:1em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.openingTitle{
+  font-size: 3vw;
+  position: absolute;
+  top:70%;
+  left:60%;
+  z-index: -1;
+  margin: 0 0 0 4rem;
+
+}
+
+.openingImg{
+  height: 20em;
+  margin:10% 20px 0 20px;
+ z-index: -2;
+ position: relative;
+}
+
+
+
+/*Design Section*/
+
+
+.designSection{
+  width:80%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5% 1em 1em;
+}
+
+.designSectionButton{
+  height:30em;
+}
+
+
+/*WebDev Section*/
+
+.WiTSection{
+  width:80%;
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 1em 5% 1em;
+}
+
+.WiTButton{
+  height:30em;
+}
+
+
+/*About Me Section*/
+
+
+.aboutMeSection{
+  width:80%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 1em 5% 1em;
+}
+
+.aboutMeButton{
+  height:30em;
+}
+
+/*Back to Top*/
+
+.custom-btn {
+width: 10em;
+height: 3.5em;
+color: black;
+border-radius: 5px;
+padding: 10px 25px;
+font-size: 50%;
+font-family: 'outfit', sans-serif; 
+font-weight: 500;
+background: transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+ box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+ 7px 7px 20px 0px rgba(0,0,0,.1),
+ 4px 4px 5px 0px rgba(0,0,0,.1);
+outline: none;
+border: none;
+
+}
+
+.custom-btn:before {
+height: 0%;
+width: 2px;
+}
+
+.custom-btn:hover {
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+            -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+            inset -4px -4px 6px 0 rgba(255,255,255,.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .4); 
+}
+
+/*footer*/
+
+footer{
+font-size: smaller;
+bottom:0;
+margin-top:auto;
+width:100%;
+height: 2em;
+padding:5px;
+margin:10% 0 0 0;
+background-color:rgb(224, 187, 228, 0.5);
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.socialImg2{
+  height: 4em;
+  transform: translateY(-8em);
+  }
+.socialImg{
+height: 2em;
+}
+.socials{
+display:flex;
+justify-content: space-around;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    margin: 10px 0;
+  }
+
+  body{
+      font-size:2.5vw;
+  }
+
+  .justifyAllPage {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-btn{
+      display:none;
+  }  
+
+  .socialImg2{
+    transform: translateY(-5em);
+    }
+
+}
+
+.marg{
+  margin-left: 4em;
+}
+
+
+ 
+  
+  .icon-column {
+    grid-area: "menu";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+ 
