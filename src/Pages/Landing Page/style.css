@@ -8,6 +8,10 @@ body{
     font-family: 'outfit', sans-serif; 
     font-size:1.65vw; 
 }
+#nameField {
+  width: '100%';
+  font-size: 82px;
+}
 
 
 /*Header and Nav*/

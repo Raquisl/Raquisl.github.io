@@ -1,90 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=auto, initial-scale=1.0">
-    <title>Home-RL</title>
-    <link rel="stylesheet" media="print" href="print.css">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Outfit&display=swap" rel="stylesheet">
-    <link rel="icon" href="./Assets/5254878_dangerous_invertebrate_jellyfish_marine_medusa_icon.png">
-  </head>
- 
-    <body>
 
-      <!--Header with scrolling Nav-->
-  
-     <header class="headerLandingPage">
-        <nav class="navInsideHeader">
-            <a class="aTagScrollToSection" onclick="scrollToSection('aboutMeSection')">About Me</a> 
-            <a class="aTagScrollToSection" onclick="scrollToSection('designSection')">Design</a>
-            <a class="aTagScrollToSection" onclick="scrollToSection('WiTSection')">WebDev </a>
-        </nav>
-     </header>
-
-      <!--Begining of Main content-->
-
-     <main class="justifyAllPage">
-
-         <!--Hero Image-->
-
-           <div class="openingSection" id="openingSectionScroll">
-           <h1 class="openingTitle">Raquel Lopes<br/>Visual Arts</h1>
-            <img class="openingImg" src="./Assets/MainImg.png" />
-            </div> 
-
-         <!--Desing Section-->
-         <a id="designSection"></a>
-          <section class="designSection">
-            <main >
-             <p>Design Projects</p> <p> Welcome! Thank you for your interest in my design projects. To view my current projects, simply click on the image to your side. The collection includes a mix of designs I have worked on over the years, some of which date back several years, as well as my most recent and ongoing projects.
-             My portfolio offers a glimpse into the breadth and depth of my design capabilities. Whether you are a prospective client looking for inspiration, or simply curious about my creative process, I invite you to explore my work and see the passion and dedication I bring to each and every project.
-             Please feel free to reach out to me if you have any questions or would like to discuss a potential design collaboration.</p>
-            </main>
-            <a href="/src/Pages/Design Page/index.html"><img src="./Assets/01884ff6-c645-4849-acd4-7f8d4689de9a.png" class="designSectionButton"/> </a>
-          </section>
-
-         <!--WebDev Section-->
-         <a id="WiTSection"></a>
-          <section class="WiTSection">
-           <main>
-             <p>WiT Wed Dev Project</p> <p> If you are interested in my web development project. Simply click on the image to your side to see the project in action. I had the absolute pleasure of creating this project as part of a course sponsored by PA Women in Tech, an organization that promotes and supports women in technology fields.
-             Through this course, I gained valuable insights and knowledge on web development best practices, user experience design, and coding languages such as HTML, CSS, and JavaScript. This project was a culmination of my learning and demonstrates my ability to create a functional and visually appealing website.</p>
-             If you have any questions or would like to discuss a potential web development project, please don't hesitate to reach out to me. I'm always excited to take on new challenges! 
-            </main>
-            <a href="/src/Pages/dev Page/index.html"><img class="WiTButton" src="./Assets/WiTButtonImg.png"></a>
-          </section>
-
-         <!--About Me Section-->
-         <a id="aboutMeSection"></a>
-          <section class="aboutMeSection">
-           <main>
-             <p>About me</p> <p> Simply click on the image to your side to read more about my background, experience, and skills. I believe that a strong understanding of who I am as a person and as a professional is essential to building lasting relationships with clients and collaborators.
-
-              In addition to my bio, you'll also find my contact information and links to my social media profiles. I am always open to new connections and opportunities, so please don't hesitate to reach out to me if you have any questions, comments, or ideas for collaboration.</p>
-            </main>
-            <a href="/src/Pages/About me Page/index.html"><img class="aboutMeButton" src="./Assets/AboutMeImg.png"></a>
-           </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=auto, initial-scale=1.0">
+  <title>Home-RL</title>
+  <link rel="stylesheet" media="print" href="print.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Outfit&display=swap" rel="stylesheet">
+  <link rel="icon" href="./Assets/5254878_dangerous_invertebrate_jellyfish_marine_medusa_icon.png">
+  <script type="text/javascript">
+    var name = localStorage.getItem("name")
+    window.onload = function() {
+      var tag = document.getElementById("nameField")
+      tag.innerHTML = `Welcome, ${name}`    }
     
-         <!--Back to Top Button-->
-         <button onclick="scrollToSection('openingSectionScroll')" class="custom-btn">Back to Top</button>
-     </main>
-    
-     <!--Footer-->
-     <footer>
-        <p>Curious cat: The colour palette for this website is inspired on the colours of the Portuguese Man o' War</p>
-        <div class="socials">
-          <a href="https://www.instagram.com/raqui_sl/" target="_blank"><img class="socialImg" src="./Assets/InstagramIcon.png"/></a>
-          <a href="https://www.linkedin.com/in/raquel-tavares-lopes/" target="_blank"><img class="socialImg" src="./Assets/LinkedinIcon.png"/></a>
-          <a href=mailto:raqueltavareslopes@outlook.com><img class="socialImg" src="./Assets/EmailIcon.png"/> </a>
-        </div>
-     </footer>
+  </script>
+</head>
 
-     <!--Link JS-->
-     <script type="text/javascript" defer src="/src/Pages/Landing Page/script.js"></script>
+<body>
 
-    </body>
+  <!--Header with scrolling Nav-->
+
+  <header class="headerLandingPage">
+    <nav class="navInsideHeader">
+      <a class="aTagScrollToSection" onclick="scrollToSection('aboutMeSection')">About Me</a>
+      <a class="aTagScrollToSection" onclick="scrollToSection('designSection')">Design</a>
+      <a class="aTagScrollToSection" onclick="scrollToSection('WiTSection')">WebDev </a>
+    </nav>
+  </header>
+
+  <!--Begining of Main content-->
+
+  <main class="justifyAllPage">
+
+    <p id="nameField"> name.. </p>
+    <input type="button" onclick="resetName()" value="Reset Name"> </input>
+
+    <!--Hero Image-->
+
+    <div class="openingSection" id="openingSectionScroll">
+
+      <h1 class="openingTitle">Raquel Lopes<br />Visual Arts</h1>
+      <img class="openingImg" src="./Assets/MainImg.png" />
+    </div>
+
+    <!--Desing Section-->
+    <a id="designSection"></a>
+    <section class="designSection">
+      <main>
+        <p>Design Projects</p>
+        <p> Welcome! Thank you for your interest in my design projects. To view my current projects, simply click on the
+          image to your side. The collection includes a mix of designs I have worked on over the years, some of which
+          date back several years, as well as my most recent and ongoing projects.
+          My portfolio offers a glimpse into the breadth and depth of my design capabilities. Whether you are a
+          prospective client looking for inspiration, or simply curious about my creative process, I invite you to
+          explore my work and see the passion and dedication I bring to each and every project.
+          Please feel free to reach out to me if you have any questions or would like to discuss a potential design
+          collaboration.</p>
+      </main>
+      <a href="/src/Pages/Design Page/index.html"><img src="./Assets/01884ff6-c645-4849-acd4-7f8d4689de9a.png"
+          class="designSectionButton" /> </a>
+    </section>
+
+    <!--WebDev Section-->
+    <a id="WiTSection"></a>
+    <section class="WiTSection">
+      <main>
+        <p>WiT Wed Dev Project</p>
+        <p> If you are interested in my web development project. Simply click on the image to your side to see the
+          project in action. I had the absolute pleasure of creating this project as part of a course sponsored by PA
+          Women in Tech, an organization that promotes and supports women in technology fields.
+          Through this course, I gained valuable insights and knowledge on web development best practices, user
+          experience design, and coding languages such as HTML, CSS, and JavaScript. This project was a culmination of
+          my learning and demonstrates my ability to create a functional and visually appealing website.</p>
+        If you have any questions or would like to discuss a potential web development project, please don't hesitate to
+        reach out to me. I'm always excited to take on new challenges!
+      </main>
+      <a href="/src/Pages/dev Page/index.html"><img class="WiTButton" src="./Assets/WiTButtonImg.png"></a>
+    </section>
+
+    <!--About Me Section-->
+    <a id="aboutMeSection"></a>
+    <section class="aboutMeSection">
+      <main>
+        <p>About me</p>
+        <p> Simply click on the image to your side to read more about my background, experience, and skills. I believe
+          that a strong understanding of who I am as a person and as a professional is essential to building lasting
+          relationships with clients and collaborators.
+
+          In addition to my bio, you'll also find my contact information and links to my social media profiles. I am
+          always open to new connections and opportunities, so please don't hesitate to reach out to me if you have any
+          questions, comments, or ideas for collaboration.</p>
+      </main>
+      <a href="/src/Pages/About me Page/index.html"><img class="aboutMeButton" src="./Assets/AboutMeImg.png"></a>
+    </section>
+
+    <!--Back to Top Button-->
+    <button onclick="scrollToSection('openingSectionScroll')" class="custom-btn">Back to Top</button>
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <p>Curious cat: The colour palette for this website is inspired on the colours of the Portuguese Man o' War</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/raqui_sl/" target="_blank"><img class="socialImg"
+          src="./Assets/InstagramIcon.png" /></a>
+      <a href="https://www.linkedin.com/in/raquel-tavares-lopes/" target="_blank"><img class="socialImg"
+          src="./Assets/LinkedinIcon.png" /></a>
+      <a href=mailto:raqueltavareslopes@outlook.com><img class="socialImg" src="./Assets/EmailIcon.png" /> </a>
+    </div>
+  </footer>
+
+  <!--Link JS-->
+  <script type="text/javascript" defer src="/src/Pages/Landing Page/script.js"></script>
+
+</body>
+
 </html>
