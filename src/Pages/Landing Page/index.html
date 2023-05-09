@@ -19,6 +19,11 @@
       tag.innerHTML = `Welcome, ${name}`    }
     
   </script>
+   <script type="text/javascript">
+    if (localStorage.getItem("name") === 'null') {
+        window.location.href = `${window.location.origin}/src/Pages/intro%20Page/index.html`;
+    }
+</script>
 </head>
 
 <body>
