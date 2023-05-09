@@ -281,9 +281,6 @@ footer {
     display: none;
   }
 
-  .justifyAllPage {
-    grid-template-columns: 1fr;
-  }
 
   .designSection {
     display: flex;
