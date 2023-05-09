@@ -12,27 +12,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Outfit&display=swap" rel="stylesheet">
   <link rel="icon" href="./Assets/5254878_dangerous_invertebrate_jellyfish_marine_medusa_icon.png">
-  <script type="text/javascript">
-    var name = localStorage.getItem("name")
-    window.onload = function() {
-      var tag = document.getElementById("nameField")
-      tag.innerHTML = `Welcome, ${name}`    }
-    
-  </script>
-   <script type="text/javascript">
-    if (localStorage.getItem("name") === 'null') {
-        window.location.href = `${window.location.origin}/src/Pages/Intro%20Page/index.html`;
-    }
-</script>
 </head>
 
 <body>
 
-  <!--Header with scrolling Nav-->
+  <!--Header with scrolling Nav and Welcome message-->
 
   <header class="headerLandingPage">
-    <div class="welcomeMessage"><p id="nameField"> name.. </p>
-    <input type="button" onclick="resetName()" value="Reset Name"> </input></div>
+    <div class="welcomeMessage">
+      <p id="nameField"> name.. </p>
+      <input class="resetBtn" type="button" onclick="resetName()" value="Reset"> </input>
+    </div>
     <nav class="navInsideHeader">
       <a class="aTagScrollToSection" onclick="scrollToSection('aboutMeSection')">About Me</a>
       <a class="aTagScrollToSection" onclick="scrollToSection('designSection')">Design</a>

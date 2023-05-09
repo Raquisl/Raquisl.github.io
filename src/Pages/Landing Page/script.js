@@ -12,6 +12,15 @@
         window.location.href = `${window.location.origin}/src/Pages/Intro%20Page/index.html`;
       }
 
+      var name = localStorage.getItem("name")
+      window.onload = function () {
+        var tag = document.getElementById("nameField")
+        tag.innerHTML = `Welcome, ${name}`
+      }
+
+      if (localStorage.getItem("name") === 'null') {
+        window.location.href = `${window.location.origin}/src/Pages/Intro%20Page/index.html`;
+      }
 
 
 
