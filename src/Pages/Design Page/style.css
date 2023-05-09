@@ -1,4 +1,4 @@
-body,html {
+body {
 
   background-image: url(./Assets/Assets/Desktop\ -\ 1.png);
   background-size: cover;
@@ -10,6 +10,8 @@ body,html {
   font-size: 1.70vw;
   height: 10vh;
   width: 100%;
+} 
+html {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +19,7 @@ body,html {
   width: 100%;
   height: 100%;
   font-size: 1.5vw;
+  font-family: 'outfit, sans-serif';
   color: black !important;
 
   @supports(display: grid) {
