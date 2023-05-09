@@ -220,23 +220,60 @@ h1 {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
   counter-increment: item-counter;
+
+  &:nth-of-type(1n) {
+    background-image: url('./Assets/Assets/0b8e6068-a878-478c-a01e-310cdf01ef3c.png');
+
+  }
   
+  &:nth-of-type(2n) {
+    background-image: url('./Assets/Assets/IMG_8145.jpeg');
+
+  }
+
   &:nth-of-type(3n) {
-    background-image: url('./Assets/Assets/MainImg.png');
+    background-image: url('./Assets/Assets/IMG_8134.jpeg');
   }
   
   &:nth-of-type(4n) {
-    background-image: url('./Assets/Assets/DesignIcon.png');
+    background-image: url("./Assets/Assets/F49049C7-4478-4044-A8B0-AA09FE532B2C.jpg");
   }
   
   &:nth-of-type(5n) {
-    background-image: url('./Assets/Assets/HomePageIcon.png');
+    background-image: url("./Assets/Assets/IMG_8144.jpeg");
   }
   
   &:nth-of-type(6n) {
-    background-image: url('./Assets/Assets/Desktop\ -\ 1.png');
+    background-image: url("./Assets/Assets/e0ed8374-af3b-4b3c-a4d7-6cf41c5f5b5c.png");
   }
   
+  &:nth-of-type(7n) {
+    background-image: url("./Assets/Assets/dcc5667e-dfc4-4345-929f-ffb54b27d252.png");
+  }
+
+  &:nth-of-type(8n) {
+    background-image: url("./Assets/Assets/812bd30a-df66-4c92-9147-df3be94fa04a[30].png");
+  }
+
+  &:nth-of-type(9n) {
+    background-image: url("./Assets/Assets/IMG_8135.jpeg");
+  }
+
+  &:nth-of-type(10n) {
+    background-image: url("./Assets/Assets/IMG_8143.jpeg");
+  }
+  
+  &:nth-of-type(11n) {
+    background-image: url("./Assets/Assets/IMG_8139.jpeg");
+  }
+
+  &:nth-of-type(12n) {
+    background-image: url("./Assets/Assets/IMG_8141.jpeg");
+  }
+
+  
+
+
   &:after {
     content: '';
     position: absolute;
@@ -255,13 +292,6 @@ h1 {
     }
   }
 
-  &--medium {
-    grid-row-end: span 2;
-  }
-
-  &--large {
-    grid-row-end: span 3;
-  }
 
   &--full {
     grid-column-end: auto;
