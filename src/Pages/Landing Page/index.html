@@ -18,15 +18,15 @@
 
   <!--Header with scrolling Nav and Welcome message-->
 
-  <header class="headerLandingPage">
+  <header class="header">
     <div class="welcomeMessage">
       <p id="nameField"> name.. </p>
-      <input class="resetBtn" type="button" onclick="resetName()" value="Reset"> </input>
+      <input class="button" type="button" onclick="resetName()" value="Reset"> </input>
     </div>
     <nav class="navInsideHeader">
-      <a class="aTagScrollToSection" onclick="scrollToSection('aboutMeSection')">About Me</a>
       <a class="aTagScrollToSection" onclick="scrollToSection('designSection')">Design</a>
       <a class="aTagScrollToSection" onclick="scrollToSection('WiTSection')">WebDev </a>
+      <a class="aTagScrollToSection" onclick="scrollToSection('aboutMeSection')">About Me</a>
     </nav>
   </header>
 
@@ -58,7 +58,7 @@
           collaboration.</p>
       </main>
       <a href="/src/Pages/Design Page/index.html"><img src="./Assets/01884ff6-c645-4849-acd4-7f8d4689de9a.png"
-          class="designSectionButton" /> </a>
+          class="designSectionBtn" /> </a>
     </section>
 
     <!--WebDev Section-->
@@ -95,7 +95,7 @@
     </section>
 
     <!--Back to Top Button-->
-    <button onclick="scrollToSection('openingSectionScroll')" class="custom-btn">Back to Top</button>
+    <button onclick="scrollToSection('openingSectionScroll')" class="button">Back to Top</button>
   </main>
 
   <!--Footer-->
