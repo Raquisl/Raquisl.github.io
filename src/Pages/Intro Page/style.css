@@ -15,6 +15,15 @@ body{
    
 }
 
+
+:root {
+    --blue: rgb(138, 255, 245);
+    --pink: #e89dff;
+    --blue2: rgba(47, 146, 138, 0.5);
+    --pink2: rgba(177, 150, 202, 0.5);
+  }
+  
+
 .form{
     margin:20%;
     background-color: rgb(224, 187, 228, 0.7);
@@ -30,38 +39,49 @@ body{
     width:10%;
 }
 
-.formButton{
-    background-color: #1fbfde;
-    color:black;
+.Button {
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    background-image: linear-gradient(120deg, var(--blue), var(--pink));
+    background-size: 100%;
+    padding: 1em 1.5em;
+    border-radius: 2em;
     border: none;
-    border-radius: 40px;
-    box-shadow: 0 2px;
-    width:10%;
+    box-shadow: 0 0.5em 0.5em rgba(57, 0, 83, 0.5);
     cursor: pointer;
-    
-}
-
-
-.formButton:hover{
-    background-color: #1fbfde;
-    color:black;
+  
+  }
+  
+  .Button:hover {
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink));
+    background-size: 100%;
+    padding: 1em 1.5em;
+    border-radius: 2em;
     border: none;
-    border-radius: 40px;
-    box-shadow: 2px 2px 2px 2px white;
-}
-.formButton:active{
-    background-color: #1fbfde;
-    color:black;
+    box-shadow: 0 0.5em 0.5em rgba(12, 13, 110, 0.5);
+    cursor: pointer;
+  }
+  
+  .Button:active {
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink));
+    background-size: 100%;
+    padding: 1em 1.5em;
+    border-radius: 2em;
     border: none;
-    border-radius: 40px;
-    box-shadow: 2px 2px 2px 2px white;
-    transform: translateY(20%);
-}
+    box-shadow: 0 0.6em 0.6em rgba(12, 13, 110, 0.5);
+    cursor: pointer;
+    transform: translateY(2px);
+  }
 
 @media only screen and (max-width: 768px) {
-    .formButton{
-        width:5rem;
-    }
+   
     .form{
         height:15em;
     }
