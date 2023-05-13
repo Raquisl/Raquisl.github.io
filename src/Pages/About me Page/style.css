@@ -38,6 +38,10 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
+.pinkheader{
+  background-color: #e89dff;
+}
+
 
 .backHome {
   text-decoration: none;
