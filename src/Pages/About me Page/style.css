@@ -108,7 +108,7 @@ body {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  margin: 1em 1em 5% 1em;
+  margin: 5px 1em 10px 1em;
 }
 
 
@@ -123,6 +123,7 @@ body {
   border: none;
   box-shadow: 0 0.5em 0.5em rgba(57, 0, 83, 0.5);
   cursor: pointer;
+  margin-bottom: 1em;
 
 }
 

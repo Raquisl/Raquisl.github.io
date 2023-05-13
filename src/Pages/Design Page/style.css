@@ -82,6 +82,7 @@ main {
   border: none;
   box-shadow: 0 0.5em 0.5em rgba(57, 0, 83, 0.5);
   cursor: pointer;
+  margin-bottom: 1em;
 
 }
 
