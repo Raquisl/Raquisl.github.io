@@ -250,8 +250,7 @@ footer {
 
 
   .button {
-    size: 20%;
-    font-size: x-small;
+    display: none;
   }
 
 }

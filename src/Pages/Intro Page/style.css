@@ -88,4 +88,7 @@ body{
     body{
         font-size: 1em;
     }
+    .button{
+      display: none;
+    }
   }

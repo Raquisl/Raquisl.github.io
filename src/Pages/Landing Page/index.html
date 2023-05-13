@@ -18,10 +18,10 @@
 
   <!--Header with scrolling Nav and Welcome message-->
 
-  <header class="header">
+  <header id="header" class="header">
     <div class="welcomeMessage">
       <p id="nameField"> name.. </p>
-      <input class="button" type="button" onclick="resetName()" value="Reset"> </input>
+      <input class="buttonTop" type="button" onclick="resetName()" value="Reset"> </input>
     </div>
     <nav class="navInsideHeader">
       <a class="aTagScrollToSection" onclick="scrollToSection('designSection')">Design</a>
@@ -45,6 +45,7 @@
 
     <!--Desing Section-->
     <a id="designSection"></a>
+  
     <section class="designSection">
       <main>
         <p>Design Projects</p>
