@@ -1,45 +1,45 @@
-body{
-    background-image: url(./Assets/Desktop\ -\ 1.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    margin:0;
-    font-family: 'outfit', sans-serif; 
-    font-size:1.65vw; 
+body {
+  background-image: url(./Assets/Desktop\ -\ 1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  font-family: 'outfit', sans-serif;
+  font-size: 1.65vw;
+  max-width: 100%;
+}
+
+:root {
+  --blue: rgb(138, 255, 245);
+  --pink: #e89dff;
+  --blue2: rgba(47, 146, 138, 0.5);
+  --pink2: rgba(177, 150, 202, 0.5);
 }
 
 
-/*Header and Nav*/
+/*Header*/
 
-.header{
-    position:fixed;
-    top:0;
-    width: 100%;
-    padding: 1em;
-    height: 1em;
-    background-color:rgb(224, 187, 228, 0.5);
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    z-index: 1000;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  background-image: linear-gradient(120deg, var(--blue2), var(--pink2));
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-.TopNav{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-      
-}
 
-.aTagScrollToSection{
+.backHome{
     text-decoration: none;
     cursor:pointer!important;
     color:black;
@@ -65,8 +65,9 @@ body{
 
 
 .openingSection{
+    margin:10% 0 0 0;
     position:relative;
-    width:80%;
+    width:100%;
     padding:1em;
     display: flex;
     flex-direction: row-reverse;
@@ -78,24 +79,24 @@ body{
     font-size: 2.5vw;
     position: absolute;
     top:20%;
-    left:70%;
+    left:30%;
     z-index: -1;
 
  }
 
 .openingImg{
-    height:28em;
-    margin:10% 20px 20px 20px;
+    max-width: 100%;
+    margin:10% 20px 0 20px;
    z-index: -2;
    position: relative;
 }
 
 
 
-/*Design Section*/
+/*MoodBoard Wireframe*/
 
 
-.designSection{
+.moodSection{
     width:80%;
     display:flex;
     flex-direction: row;
@@ -104,14 +105,15 @@ body{
     margin: 1em 5% 1em 1em;
   }
 
-.designSectionButton{
-    height:30em;
-  }
+.wireframes{
+  max-width: 100%;
+  border-radius: 15px;
+}
 
  
- /*WebDev Section*/
+ /*Code Structure*/
 
-.WiTSection{
+.structureSection{
     width:80%;
     display:flex;
     flex-direction: row-reverse;
@@ -120,15 +122,13 @@ body{
     margin: 1em 1em 5% 1em;
   }
 
-.WiTButton{
-    height:30em;
-  }
 
 
- /*About Me Section*/
+
+ /*JS Section*/
  
  
-.aboutMeSection{
+.jsSection{
     width:80%;
     display:flex;
     flex-direction: row;
@@ -137,98 +137,121 @@ body{
     margin: 1em 1em 5% 1em;
   }
 
-  .aboutMeButton{
-    height:30em;
-}
+  .unsplashImg{
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+/*Final Stepts and Thank yous*/
+
+  .finalSteps{
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 1em 5% 1em;
+  }
+
+  
+
+ 
 
 /*Back to Top*/
 
-.custom-btn {
-  width: 10em;
-  height: 3.5em;
-  color: black;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-size: 50%;
-  font-family: 'outfit', sans-serif; 
+.button {
+  font-family: 'outfit', sans-serif;
   font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+  letter-spacing: -0.025em;
+  background-image: linear-gradient(120deg, var(--blue), var(--pink));
+  background-size: 100%;
+  padding: 1em 1.5em;
+  border-radius: 2em;
   border: none;
-  
+  box-shadow: 0 0.5em 0.5em rgba(57, 0, 83, 0.5);
+  cursor: pointer;
+
 }
 
-.custom-btn:before {
-  height: 0%;
-  width: 2px;
+.button:hover {
+  font-family: 'outfit', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  background-image: linear-gradient(90deg, var(--blue), var(--pink));
+  background-size: 100%;
+  padding: 1em 1.5em;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 0 0.5em 0.5em rgba(12, 13, 110, 0.5);
+  cursor: pointer;
 }
 
-.custom-btn:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-              inset -4px -4px 6px 0 rgba(255,255,255,.2),
-              inset 4px 4px 6px 0 rgba(0, 0, 0, .4); 
+.button:active {
+  font-family: 'outfit', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  background-image: linear-gradient(90deg, var(--blue), var(--pink));
+  background-size: 100%;
+  padding: 1em 1.5em;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 0 0.6em 0.6em rgba(12, 13, 110, 0.5);
+  cursor: pointer;
+  transform: translateY(2px);
 }
 
 /*footer*/
 
-footer{
+footer {
+  max-width: 100%;
   font-size: smaller;
-  bottom:0;
-  margin-top:auto;
-  width:100%;
+  bottom: 0;
+  margin-top: auto;
+  width: 100%;
   height: 2em;
-  padding:5px;
-  margin:10% 0 0 0;
-  background-color:rgb(224, 187, 228, 0.5);
-  display:flex;
+  padding: 5px;
+  margin: 0;
+  background-image: linear-gradient(120deg, var(--blue2), var(--pink2));
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-.socialImg{
+.socialImg {
   height: 2em;
 }
-.socials{
-  display:flex;
+
+.socials {
+  display: flex;
   justify-content: space-around;
 }
 
 
+
 /*Media Queries*/
 
- @media only screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-    nav {
-      margin: 10px 0;
-    }
+@media only screen and (max-width: 768px) {
+  .navInsideHeader {
+    display: none;
+  }
 
-    body{
-        font-size:2.5vw;
-    }
-
-    .justifyAllPage {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .custom-btn{
-        display:none;
-    }  
+  body {
+    font-size: small;
 
   }
+
+  .justifyAllPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .button {
+    size: 20%;
+    font-size: x-small;
+  }
+
+}

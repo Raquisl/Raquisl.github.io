@@ -16,12 +16,12 @@
 
 <body>
 
-  <!--Header with scrolling Nav-->
+  <!--Header with backHome link-->
 
   <header class="header">
-    <nav class="navInsideHeader">
-      <a class="aTagScrollToSection" href="/src/Pages/Landing Page/index.html"> &#8592; Back to Homepage</a>
-    </nav>
+    
+      <a class="backHome" href="/src/Pages/Landing Page/index.html"> &#8592; Back to Homepage</a>
+
   </header>
 
   <!--Begining of Main content-->
@@ -32,12 +32,12 @@
 
     <div class="openingSection" id="openingSectionScroll">
       <h1 class="openingTitle">WiT Project</h1>
-      <img class="openingImg" src="./Assets/WiTButtonImg.png" />
+      <img class="openingImg" src="./Assets/Header Img Wit.png" />
     </div>
 
-    <!--Desing Section-->
-    <a id="designSection"></a>
-    <section class="designSection">
+    <!--MoodBoard and Wireframes-->
+
+    <section class="moodSection">
       <main>
         <p>Mood Board and Wireframes</p>
         <p>When we began this project, our first steps were to create mood boards and wireframes.
@@ -50,13 +50,14 @@
           jellyfish. I drew inspiration from the vibrant colors and stunning photography of Rebecca R Helm, who has
           extensively studied this beautiful creature.</p>
       </main>
-      <a href="/src/Pages/Design Page/index.html"><img src="./Assets/01884ff6-c645-4849-acd4-7f8d4689de9a.png"
-          class="designSectionButton" /> </a>
+    </section>
+    <section>
+      <img src="./Assets/First Img WitP.png" class="wireframes">
     </section>
 
-    <!--WebDev Section-->
-    <a id="WiTSection"></a>
-    <section class="WiTSection">
+    <!--Code structure Section-->
+
+    <section class="structureSection">
       <main>
         <p>Code Structure</p>
         <p> After deciding on the overall theme for our portfolio website, we dove into the essential theories of user
@@ -74,16 +75,15 @@
           create a portfolio website that not only showcases our work but also provides an enjoyable and intuitive
           browsing experience for our visitors.</p>
       </main>
-      <a href="/src/Pages/dev Page/index.html"><img class="WiTButton" src="./Assets/WiTButtonImg.png"></a>
+     
     </section>
 
-    <!--About Me Section-->
-    <a id="aboutMeSection"></a>
-    <section class="aboutMeSection">
+    <!--JS Section-->
+    
+    <section class="jsSection">
       <main>
         <p>JavaScript</p>
         <p>
-
           With the fundamentals of HTML and CSS under our belts, we were ready to dive into the world of JavaScript. As
           the brains behind dynamic and interactive websites, JavaScript was the next logical step in our development
           process.
@@ -103,11 +103,15 @@
           layer of functionality and interactivity to our website, ensuring that it stands out from the crowd. So, go
           ahead and give it a try!</p>
       </main>
-      <a href="/src/Pages/About me Page/index.html"><img class="aboutMeButton" src="./Assets/AboutMeImg.png"></a>
     </section>
 
-    <a id="WiTSection"></a>
-    <section class="WiTSection">
+    <section>
+      <img class="unsplashImg" src="./Assets/joan-gamell-ZS67i1HLllo-unsplash.jpg"/>
+    </section>
+
+    <!--Final Steps and Thank yous-->
+
+    <section class="finalSteps">
       <main>
         <p>Final steps</p>
         <p>
@@ -128,11 +132,11 @@
 
           Also an honorable mention to Joe and Vez for putting up with my silly questions and syntax errors &#128517</p>
       </main>
-      <a href="/src/Pages/dev Page/index.html"><img class="WiTButton" src="./Assets/WiTButtonImg.png"></a>
+      
     </section>
 
     <!--Back to Top Button-->
-    <button onclick="scrollToSection('openingSectionScroll')" class="custom-btn">Back to Top</button>
+    <button onclick="scrollToSection('openingSectionScroll')" class="button">Back to Top</button>
   </main>
 
   <!--Footer-->
